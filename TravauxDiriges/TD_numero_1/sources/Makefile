@@ -21,7 +21,7 @@ clean:
 	@rm -fr *.o *.exe *~
 
 .cpp.o:
-	$(CXX) $(CXXFLAGS2) $^ -c $@	
+	$(CXX) $(CXXFLAGS2) -c $< -o $@	
 
 
 TestProductMatrix.exe : TestProductMatrix.o Matrix.hpp Matrix.o ProdMatMat.o
